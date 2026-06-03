@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarga PawPany</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Aquí cargamos tu fondo de huellitas */
+            background-image: url('fondo_huellas.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .tarjeta {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            max-width: 500px;
+            width: 90%;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        h1 {
+            color: #B55D3E; 
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+
+        p.descripcion {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .logo-descarga {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .logo-descarga:hover {
+            transform: scale(1.08);
+        }
+
+        p.instruccion {
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        footer {
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.75);
+            color: white;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .foto-nano {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+            margin-bottom: 8px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tarjeta">
+        <h1>¡Obtén PawPany!</h1>
+        <p class="descripcion">
+            La plataforma definitiva para conectar a dueños de mascotas con cuidadores de confianza. 
+            Descarga la aplicación, crea tu perfil y encuentra a la compañía ideal para tu mejor amigo.
+        </p>
+
+        <a href="pawpany.apk" download="PawPany.apk">
+            <img src="logo.png" alt="Logo de PawPany" class="logo-descarga">
+        </a>
+        
+        <p class="instruccion">Haz click en el logo para descargar la APK</p>
+    </div>
+
+    <footer>
+        <img src="nano.png" alt="Mi perrito" class="foto-nano">
+        <p>&copy; María Lobo Mínguez - 2026</p>
+    </footer>
+
+</body>
+</html>
